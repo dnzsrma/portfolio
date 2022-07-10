@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.61ae2f79.css",
-    "main.js": "/portfolio/static/js/main.e4bb4d1c.js",
+    "main.js": "/portfolio/static/js/main.d1e13e87.js",
     "static/media/pexels-toni-cuenca-585752.jpg": "/portfolio/static/media/pexels-toni-cuenca-585752.6db4ecc2af3188a6d7e9.jpg",
     "static/media/pexels-neo.jpg": "/portfolio/static/media/pexels-neo.a2e3ef5fef2cddde8f27.jpg",
     "static/media/pexels-chepte-cormani.jpg": "/portfolio/static/media/pexels-chepte-cormani.565a044f130e5aab6c4c.jpg",
@@ -21,10 +21,10 @@
     "static/media/open-in-new.svg": "/portfolio/static/media/open-in-new.3ede19ed228086e87d899cfdb6684d58.svg",
     "static/media/keyboard-return.svg": "/portfolio/static/media/keyboard-return.bae47bc008e052305eb4c59f957099b1.svg",
     "main.61ae2f79.css.map": "/portfolio/static/css/main.61ae2f79.css.map",
-    "main.e4bb4d1c.js.map": "/portfolio/static/js/main.e4bb4d1c.js.map"
+    "main.d1e13e87.js.map": "/portfolio/static/js/main.d1e13e87.js.map"
   },
   "entrypoints": [
     "static/css/main.61ae2f79.css",
-    "static/js/main.e4bb4d1c.js"
+    "static/js/main.d1e13e87.js"
   ]
 }
