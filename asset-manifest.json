@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.2c35bff2.css",
+    "main.js": "/portfolio/static/js/main.edee7192.js",
+    "static/media/pexels-toni-cuenca-585752.jpg": "/portfolio/static/media/pexels-toni-cuenca-585752.6db4ecc2af3188a6d7e9.jpg",
+    "static/media/pexels-neo.jpg": "/portfolio/static/media/pexels-neo.a2e3ef5fef2cddde8f27.jpg",
+    "static/media/pexels-chepte-cormani.jpg": "/portfolio/static/media/pexels-chepte-cormani.565a044f130e5aab6c4c.jpg",
+    "static/media/GentiumBookPlus-BoldItalic.ttf": "/portfolio/static/media/GentiumBookPlus-BoldItalic.d829a38139845eef5cf3.ttf",
+    "static/media/Arima-VariableFont_wght.ttf": "/portfolio/static/media/Arima-VariableFont_wght.6e528af4e0c37a723725.ttf",
+    "static/media/RobotoMono-VariableFont_wght.ttf": "/portfolio/static/media/RobotoMono-VariableFont_wght.9ec32603cb86699d7770.ttf",
+    "static/media/BebasNeue-Regular.ttf": "/portfolio/static/media/BebasNeue-Regular.12e3683f9192436a7be8.ttf",
+    "static/media/linkedin-logo.png": "/portfolio/static/media/linkedin-logo.ab7644f18965cdeea483.png",
+    "index.html": "/portfolio/index.html",
+    "static/media/down.svg": "/portfolio/static/media/down.b027332b657093d2cfd5d4081a448ea9.svg",
+    "static/media/open-in-new.svg": "/portfolio/static/media/open-in-new.3ede19ed228086e87d899cfdb6684d58.svg",
+    "main.2c35bff2.css.map": "/portfolio/static/css/main.2c35bff2.css.map",
+    "main.edee7192.js.map": "/portfolio/static/js/main.edee7192.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2c35bff2.css",
+    "static/js/main.edee7192.js"
+  ]
+}
