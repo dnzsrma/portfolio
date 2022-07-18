@@ -1,0 +1,343 @@
+@font-face {
+  font-family: "Arima";
+  src: url(repo/Arima-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "Bebas";
+  src: url(repo/BebasNeue-Regular.ttf);
+}
+@font-face {
+  font-family: "Roboto";
+  src: url(repo/RobotoMono-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "Gentium";
+  src: url(repo/GentiumBookPlus-BoldItalic.ttf);
+}
+:root {
+  --theme-darker: #212529;
+  --theme-gray: #495057;
+  --theme-neutral:#ADB5BD;
+  --theme-lighter:#DEE2E6;
+  --theme-lightest: #F8F9FA;
+}
+
+/*Basic components*/
+body,html {
+  background: linear-gradient(130deg, var(--theme-lighter), var(--theme-neutral),#8a8b8b );
+  background-size: 800% 800%;
+  animation: bg-anim 10s ease-in-out infinite;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content:start;
+  align-items: center;
+}
+/* -----Mobile Version--------*/
+/*Main Page*/
+#Main{
+  font-family: "Bebas";
+  font-weight: 900;
+  font-style: italic;
+  letter-spacing: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 2rem;
+}
+#Main h1{
+  text-align: center;
+}
+#Main h1 span{
+  position: relative;
+  align-self: baseline;
+}
+#Main h2{
+  text-align: center;
+}
+#Main button{
+  padding: 25px;
+  font-family: "Bebas";
+  font-style: italic;
+  letter-spacing: 1px;
+  border-radius: 25px;
+  background-color: var(--theme-gray);
+  color: var(--theme-lighter);
+  border: 1px solid var(--theme-darker);
+  transition: .5s;
+  animation: "opacity-anim" 1.5s ease-in-out;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+#Main button:active{
+  color: var(--theme-neutral);
+  background-color: var(--theme-gray);
+}
+.main-title{
+  color: var(--theme-darker);
+  text-shadow: 0 0 10px var(--theme-darker);
+  transition: 1s;
+  animation: "title-anim" 1s linear;
+  animation-iteration-count: 1;
+  letter-spacing: 15px;
+  -webkit-text-stroke-width: .5px;
+  -webkit-text-stroke-color: var(--theme-neutral);
+}
+/*About Page*/
+#About , #Contact , #Projects{
+  background-color: var(--theme-lightest);
+  width: 350px;
+  min-height: 100vh ;
+  height: fit-content;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border-radius: 30px;
+  box-shadow: 0 0 50px var(--theme-gray);
+  display: flex;
+  flex-direction: column;
+  justify-content: baseline;
+  align-items: center;
+  font-family: "Roboto";
+  font-weight: bolder;
+  overflow-x: hidden;
+}
+#About h1 , #Contact h1 , #Projects h1{
+  font-family: "Arima";
+  color:var(--theme-lighter) ;
+  text-shadow: 5px 5px 10px var(--theme-darker);
+  margin-top: -140px;
+  z-index: 1;
+  font-size: 3.5rem;
+}
+.header{
+  width: 100%;
+  height: 170px;
+  border-radius: inherit;
+  object-fit: cover;
+  opacity: .8;
+  transition: 1s ease-in;
+}
+.opacity-anim{
+  animation: "opacity-anim" 1s ease-in;
+}
+#About p , #Projects p{
+  margin: 30px;
+  color: var(--theme-gray);
+}
+.icon{
+  height: 32px;
+  width: auto;
+  margin: 10px;
+}
+#About button , .projects-page-btn , .contact-page-btn{
+  padding: 8px;
+  padding-left: 60px;
+  padding-right: 60px;
+  font-family: "Bebas";
+  font-size: 1.2em;
+  letter-spacing: .5px;
+  background-color: var(--theme-gray);
+  color: var(--theme-lightest);
+  border-radius: 20px;
+  margin: 15px;
+}
+#About button:active{
+  background-color: var(--theme-darker);
+  color: var(--theme-neutral);
+}
+#techstack{
+  width: 60%;
+  display:grid;
+  grid-auto-rows: auto;
+  grid-template-columns: repeat(auto-fill,40px);
+  margin-left:20px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.techstack-icon{
+  height: 32px;
+  width: 32px;
+  margin: 10px;
+}
+.contact-info-row{
+ display: flex;
+ flex-direction: row;
+ justify-content: center;
+ align-items: center;
+}
+.contact-info{
+  color: var(--theme-gray);
+  font-weight: 400;
+  font-size: .8rem;
+}
+.project-card{
+  margin-top: 20px;
+  background-color: var(--theme-lighter);
+  height: fit-content;
+  width: 250px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px var(--theme-darker);
+  display: grid;
+  grid-template-columns: repeat(auto-fill,20px);
+  grid-template-rows: repeat(auto-fill,20px);
+}
+.project-card-img{
+  width: 200px;
+  grid-column: 2 / -1;
+  grid-row-start: 2;
+  border-radius: 5px;
+}
+.project-title-row{
+    display: flex;
+    flex-direction: row;
+    grid-row-start: 9;
+    grid-column: 1 / -1;
+    margin-top: -10px;
+    margin-bottom: -20px;
+    align-items: center;
+    justify-content: space-around;
+}
+.project-card p{
+  grid-row-start: 10;
+  grid-column: 1 / -1;
+  font-size:.5em;
+  margin-top:0px;
+  margin:10px;
+}
+.project-card-icon{
+  height: 16px;
+  width: 16px;
+}
+.project-title-row h5{
+  color: var(--theme-darker);
+}
+#down-btn{
+  animation: "bounce-anim" 2s ;
+  animation-iteration-count: infinite;
+}
+.projects-page-btn{
+  margin:0px;
+  min-width: 200px;
+  margin-top: 20px;
+}
+
+
+
+
+/*----Desktop version----*/
+@media only screen and (min-width: 992px) {
+  /*Main Page*/
+  #Main h1{
+    top: -30px;
+    position: relative;
+    margin-left: -300px;
+    font-size: 4em;
+  }
+  #Main h1 span{
+    position: relative;
+    left: -150px;
+    top: 150px;
+  }
+  #Main h2{
+    position: relative;
+    font-size: 1.8em;
+    margin-top: 60px;
+    margin-right: -300px;
+  }
+  #Main button{
+    padding-left: 150px;
+    padding-right: 150px;
+    font-size:.7em;
+    margin-left: -550px;
+    -webkit-text-stroke-width: .5px;
+    -webkit-text-stroke-color: var(--theme-darker);
+    margin-bottom: 60px;
+  }
+  .main-title:hover{
+    letter-spacing: 10px;
+    text-shadow: 5px 5px 30px var(--theme-darker);
+  }
+  #Main button:hover{
+    letter-spacing: 2px;
+    color: var(--theme-lightest);
+    background-color: var(--theme-darker);
+  }
+  #Main button:active{
+    color: var(--theme-neutral);
+    background-color: var(--theme-gray);
+  }
+  #About , #Contact , #Projects{
+    margin-top: 20px;
+    min-height: 80vh;
+    height: fit-content;
+    width: 1100px;
+  }
+  .header{
+    object-fit:cover;
+    object-position: 0 55%;
+    width: 100%;
+    height: 200px;
+  }
+  #About h1{
+    margin-top: -200px;
+    margin-bottom: 100px;
+  }
+  #techstack{
+    
+    margin-left: 80px;
+  }
+  .techstack-icon{
+    margin: 20px;
+  }
+  .project-card{
+    width: 500px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .project-card-img{
+    grid-column: 5;
+    width: 350px;
+  }
+  .project-card p{
+    font-size: 1em;
+    margin: 0px;
+  }
+  .project-title-row h5{
+    font-size: 2em;
+    margin: 10px;
+  }
+  .project-card-icon{
+    height: 24px;
+    width: 24px;
+  }
+  .left-card{
+    margin-left: -500px;
+  }
+  .right-card{
+    margin-right: -500px;
+  }  
+}
+
+
+
+/*Animations*/
+@keyframes opacity-anim{
+  0%{opacity: 0;}
+  100%{opacity: 1;}
+}
+@keyframes title-anim {
+  0%{opacity: 0; translate: 0px -20px; }
+  100%{opacity: 1;}
+}
+@keyframes bg-anim {
+  0%{background-position:0% 2%}
+  50%{background-position:100% 99%}
+  100%{background-position:0% 2%}
+}
+@keyframes bounce-anim {
+  25%{translate: 0px 10px;}
+}
