@@ -12,7 +12,7 @@ function ProjectCard(props) {
   }
 
     return (
-    <Parallax translateX={right ? ['60px', '-1px'] : ['-60px', '0px']} opacity= {[0.5,1]} shouldAlwaysCompleteAnimation="true">
+    <Parallax translateX={right ? ['60px', '-30px'] : ['-60px', '30px']} opacity= {[0.1,1]}>
       <div className={side}>
         <img className="project-card-img" alt="" src={placeholder}></img>
         <div className="project-title-row">
